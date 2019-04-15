@@ -31,21 +31,21 @@ namespace ConsoleApp1
                 SubdivisionDTO sd = subdivService.GetAll().ToList()[0];
 
                 Console.WriteLine("Works");
-                //Console.WriteLine($"{s.StreetId}  {s.StreetName}");
-                //Console.WriteLine($"{a.House} {a.Latitude} {a.Longitude} {a.Serial} {a.StreetId} {a.SubdivisionId} {a.СountEntrance} {a.СountFloor}");
-                //Console.WriteLine($"{sd.SubdivisionId} {sd.SubdivisionName}");
+                Console.WriteLine($"{s.StreetId}  {s.StreetName}");
+                Console.WriteLine($"{a.House} {a.Latitude} {a.Longitude} {a.Serial} {a.StreetId} {a.SubdivisionId} {a.СountEntrance} {a.СountFloor}");
+                Console.WriteLine($"{sd.SubdivisionId} {sd.SubdivisionName}");
 
                 Console.WriteLine("");
                 Console.WriteLine("Get");
                 Console.WriteLine("Works");
 
-                //s = streetService.Get(1);
-                //a = addressService.Get(1);
-                //sd = subdivService.Get(1);
+                s = streetService.Get(1);
+                a = addressService.Get(1);
+                sd = subdivService.Get(1);
 
-                //Console.WriteLine($"{s.StreetId}  {s.StreetName}");
-                //Console.WriteLine($"{a.House} {a.Latitude} {a.Longitude} {a.Serial} {a.StreetId} {a.SubdivisionId} {a.СountEntrance} {a.СountFloor}");
-                //Console.WriteLine($"{sd.SubdivisionId} {sd.SubdivisionName}");
+                Console.WriteLine($"{s.StreetId}  {s.StreetName}");
+                Console.WriteLine($"{a.House} {a.Latitude} {a.Longitude} {a.Serial} {a.StreetId} {a.SubdivisionId} {a.СountEntrance} {a.СountFloor}");
+                Console.WriteLine($"{sd.SubdivisionId} {sd.SubdivisionName}");
 
                 Console.WriteLine("");
                 Console.WriteLine("Add");
@@ -55,26 +55,26 @@ namespace ConsoleApp1
                 a = new AddressDTO() { House = "TestAddress1", Latitude = decimal.Zero, Longitude = decimal.Zero, Serial = "Test Serial1", StreetId = streetService.GetAll().Last().StreetId, SubdivisionId = subdivService.GetAll().Last().SubdivisionId, СountEntrance = 0, СountFloor = 0 };
                 sd = new SubdivisionDTO() { SubdivisionName = "SubDiv Test1" };
 
-                //Console.WriteLine(streetService.Add(s));
-                //Console.WriteLine(addressService.Add(a).House);
-                //Console.WriteLine(a.House);
-                //Console.Write(addressService.GetAll().Where(g => g.House == a.House).FirstOrDefault().AddressId);
-                //Console.WriteLine(subdivService.Add(sd));
+                Console.WriteLine(streetService.Add(s));
+                Console.WriteLine(addressService.Add(a).House);
+                Console.WriteLine(a.House);
+                Console.Write(addressService.GetAll().Where(g => g.House == a.House).FirstOrDefault().AddressId);
+                Console.WriteLine(subdivService.Add(sd));
 
 
                 Console.WriteLine("");
                 Console.WriteLine("Update");
                 Console.WriteLine("Works");
-                //streetService.Update(new StreetDTO() { StreetId = streetService.GetAll().Last().StreetId, StreetName = "Updated Street" });
+                streetService.Update(new StreetDTO() { StreetId = streetService.GetAll().Last().StreetId, StreetName = "Updated Street" });
 
-                //addressService.Update(new AddressDTO() { AddressId = addressService.GetAll().First().AddressId, House = "Updated Address" });
-                //Console.WriteLine($"{ addressService.GetAll().First().AddressId }, { addressService.GetAll().First().House }");
+                addressService.Update(new AddressDTO() { AddressId = addressService.GetAll().First().AddressId, House = "Updated Address" });
+                Console.WriteLine($"{ addressService.GetAll().First().AddressId }, { addressService.GetAll().First().House }");
 
-                //subdivService.Update(new SubdivisionDTO() { SubdivisionId = subdivService.GetAll().Last().SubdivisionId, SubdivisionName = "Updated SubDiv" });
+                subdivService.Update(new SubdivisionDTO() { SubdivisionId = subdivService.GetAll().Last().SubdivisionId, SubdivisionName = "Updated SubDiv" });
 
-                //Console.WriteLine(streetService.GetAll().Last().StreetName);
-                //Console.WriteLine(addressService.GetAll().Last().House);
-                //Console.WriteLine(subdivService.GetAll().Last().SubdivisionName);
+                Console.WriteLine(streetService.GetAll().Last().StreetName);
+                Console.WriteLine(addressService.GetAll().Last().House);
+                Console.WriteLine(subdivService.GetAll().Last().SubdivisionName);
 
 
                 Console.WriteLine("");
