@@ -22,7 +22,7 @@ namespace ACP.BLL.Models
         public string StreetName { get; set; }
 
         [StringLength(64)]
-        public string SubDivisionName { get; set; }
+        public string SubdivisionName { get; set; }
 
         [Required]
         [StringLength(24)]
