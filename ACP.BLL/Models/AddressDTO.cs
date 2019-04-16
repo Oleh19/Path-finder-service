@@ -12,8 +12,15 @@ namespace ACP.BLL.Models
     {
         [Key]
         public int AddressId { get; set; }
-
+        [Key]
         public int StreetId { get; set; }
+
+        [StringLength(128)]
+        public string StreetName { get; set; }
+
+        [StringLength(64)]
+        public string SubdivisionName { get; set; }
+
 
         public int SubdivisionId { get; set; }
 
