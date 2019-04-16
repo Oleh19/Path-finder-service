@@ -23,7 +23,7 @@ namespace ACP.BLL.Services
              {
                  cfg.AddExpressionMapping();
                  cfg.CreateMap<Address, AddressDTO>()
-                  .ForMember("SubDivisionName", opt => opt.MapFrom(a => a.Subdivision.SubdivisionName))
+                  .ForMember("SubdivisionName", opt => opt.MapFrom(a => a.Subdivision.SubdivisionName))
                   .ForMember("StreetName", opt => opt.MapFrom(a => a.Street.StreetName));
                  cfg.CreateMap<AddressDTO, Address>();
 
