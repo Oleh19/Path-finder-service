@@ -83,15 +83,44 @@ namespace ТеаmGoogleMap.Maps.Controllers
         }
 
         [HttpPost]
-        public ActionResult Autocomplete(string content)
+        public string Autocomplete(string content)
         {
             var matches = addressesService
                 .GetAll()
-                .Where(x => content.ToLower().Contains(x.House) ||
+                .Where(x => content.ToLower().Contains(x.House.ToLower()) ||
                 x.StreetName.ToLower().Contains(content.ToLower()))
-                .Select(x => new { id = x.StreetId, value = $"{x.StreetName}, {x.House}" });
-            object output = JsonConvert.SerializeObject(matches);
-            return View(output);
+                .Select(x => new { id = x.AddressId, value = $"{x.StreetName}, {x.House}" });
+            string output = JsonConvert.SerializeObject(matches);
+            return output;
+        }
+
+        [HttpPost]
+        public string ShowPlace(string content)
+        {
+            dynamic coords = addressesService
+                .GetAll()
+                .Select(x => new
+                {
+                    id = x.AddressId,
+                    value = $"{x.StreetName}, {x.House}",
+                    lat = x.Latitude,
+                    lon = x.Longitude
+                })
+                .Where(x => String.Compare(x.value, content) == 0).Select(x => new
+                {
+                    x.lat,
+                    x.lon,
+                    x.id,
+                }).First();
+            var list = addressesService.GetAll().ToList();
+            int cnt = -1;
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i].AddressId == coords.id)
+                    cnt = i;
+            }
+            string output = JsonConvert.SerializeObject(new Tuple<dynamic, int>(coords, cnt));
+            return output;
         }
     }
 }

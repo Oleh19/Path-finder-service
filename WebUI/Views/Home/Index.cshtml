@@ -16,6 +16,17 @@
 
     #map_canvas {
         height: 600px;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+    .ui-autocomplete.ui-menu {
+        background: white;
+        width: 100px;
+    }
+    .ui-autocomplete.ui-menu.ui-menu-divider:hover {
+        border-width: 2px;
+        border-style: dashed;
+        border-color: royalblue;
     }
 </style>
 
@@ -23,7 +34,7 @@
 
 <div class="form-horizontal">
     <input type="text" id="searchInput" />
-    <button id="showPlace btn btn-small btn-warning"></button>
+    <button id="showPlace" class="btn btn-small btn-warning">Go to</button>
 </div>
 <div id="map_canvas"></div>
 
@@ -37,6 +48,7 @@
         var map, directionsService, directionsDisplay, currentlyOpened;
         var json = @Html.Raw(Json.Encode(@Model));
         var arr = JSON.parse(json);
+
         function initialize()
         {
             var myLatlng = new google.maps.LatLng(50.44, 30.61);
@@ -49,6 +61,7 @@
             directionsDisplay = new google.maps.DirectionsRenderer;
             map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
             directionsDisplay.setMap(map);
+            
         }
         function fill()
         {
@@ -106,14 +119,17 @@
                     type: "POST",
                     dataType: "json",
                     data: { content: request.term },
-                    success: function (data) {
+                    success: function (data) {                        
                         response($.map(data, function (item) {
                             return {
                                 label: item.value,
-                                value: item.id,
+                                value: item.value,
                                 id: item.id
                             }
                         }))
+                    },
+                    error: function (e) {
+                        alert("Something went wrong on server");
                     }
                 });
             },
@@ -124,6 +140,25 @@
                     return count + (count > 1 ? ' results' : ' result ') + ' found';
                 }
             }
+        });
+        $("#showPlace").click(function (e) {
+            let str = $('#searchInput').val();
+            //let map = $('#map_canvas')[0];
+            $.ajax({
+                url: "/Home/ShowPlace",
+                type: "POST",
+                dataType: "json",
+                data: { content: str },
+                success: function (data) {
+                    map.panTo(new google.maps.LatLng(parseFloat(data.Item1.lat), parseFloat(data.Item1.lon)));
+                    map.setZoom(18);
+                    let cnt = data.Item2;
+                    currentlyOpened = arrInfoWindows[cnt].open(map, arrMarkers[cnt]);
+                },
+                error: function (e) {
+                    alert("Something went wrong on server");
+                }
+            });
         });
 
         initialize();

@@ -34,4 +34,3 @@ D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.cspr
 D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CopyComplete
 D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.dll
 D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.pdb
-D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csprojAssemblyReference.cache
