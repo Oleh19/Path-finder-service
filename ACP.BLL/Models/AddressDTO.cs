@@ -12,6 +12,7 @@ namespace ACP.BLL.Models
     {
         [Key]
         public int AddressId { get; set; }
+      
         [Key]
         public int StreetId { get; set; }
 
@@ -23,9 +24,15 @@ namespace ACP.BLL.Models
 
 
         public int SubdivisionId { get; set; }
+        
+        [StringLength(128)]
+        public string StreetName { get; set; }
+
+        [StringLength(64)]
+        public string SubdivisionName { get; set; }
 
         [Required]
-        [StringLength(12)]
+        [StringLength(24)]
         public string House { get; set; }
 
         [StringLength(24)]
