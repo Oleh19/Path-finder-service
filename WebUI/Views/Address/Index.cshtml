@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Address list</h2>
+<div class="container">
+
+
+
+    <div class="row">
+        <div class="col-sm-3">
+           
+            @Html.DropDownList("StreetId", ViewBag.StritId as SelectList, new { @class = "form-control" })
+ 
+        </div>
+      
+        <div class="col-sm-1">        
+            @Html.ActionLink("Create New", "Edit", new { id = 0 }, new { @class = "btn btn-sm btn-primary" })
+        </div>
+
+    </div>
+
+
+
+    <br />
+
+
+
+    <div id="strits" class="col-sm-10">
+
+    </div>
+
+</div>
+
+
+@section MyScript
+{
+    
+    <script type="text/javascript">
+
+        $(function () {
+
+            var id = $('#StreetId').val()     
+            $("#strits").load("@Url.Action("AddresByStreet", "Address")", { id: id });
+
+            $('#StreetId').change(function () {
+                $("#strits").load("@Url.Action("AddresByStreet", "Address")", { id: $(this).val() });
+            });
+
+
+            $('body').on('click', '.mypaging', function () {
+                $("#strits").load("@Url.Action("AddresByStreet", "Address")", { id: $('#StreetId').val(), page: $(this).text() });
+            });
+        
+        });
+
+    </script>
+
+}

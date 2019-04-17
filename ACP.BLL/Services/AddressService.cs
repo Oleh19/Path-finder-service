@@ -17,13 +17,13 @@ namespace ACP.BLL.Services
         public AddressService(IGenericRepository<Address> rep) : base(rep) { }
         
 
-        protected virtual IMapper InitMapper()
+        protected override IMapper InitMapper()
         {
             return new MapperConfiguration(cfg =>
              {
                  cfg.AddExpressionMapping();
                  cfg.CreateMap<Address, AddressDTO>()
-                  .ForMember("SubDivisionName", opt => opt.MapFrom(a => a.Subdivision.SubdivisionName))
+                  .ForMember("SubdivisionName", opt => opt.MapFrom(a => a.Subdivision.SubdivisionName))
                   .ForMember("StreetName", opt => opt.MapFrom(a => a.Street.StreetName));
                  cfg.CreateMap<AddressDTO, Address>();
 

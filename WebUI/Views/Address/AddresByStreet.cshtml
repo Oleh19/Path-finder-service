@@ -1,0 +1,134 @@
+﻿@using WebUI.Helpers
+@using ACP.BLL.Models
+
+@model WebUI.Models.VwAddressByStreet
+<style>
+    .selected {
+        background-color: darkslateblue;
+    }
+</style>
+
+<div class="container">
+
+    <div class="row">
+        <div class="row">
+            <div class=" col ">
+
+                <div class="col-sm-3">
+                    <b>StreetName</b>
+                </div>
+
+                <div class="col-sm-2">
+                    <b>Subdivision Name</b>
+                </div>
+
+                <div class="col-sm-1">
+                    <b>House</b>
+                </div>
+
+                <div class="col-sm-1">
+                    <b>Сount Floor</b>
+                </div>
+
+                <div class="col-sm-1">
+                    <b>Сount Entrance</b>
+                </div>
+
+                <div class="col-sm-1" hidden>
+                    <b>Latitude</b>
+                </div>
+
+                <div class="col-sm-1" hidden>
+                    <b>Longitude</b>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    @foreach (var item in Model.AddressDTOs)
+    {
+        <div class="row">
+            <div class="col ">
+
+                <div class="col-sm-3">
+                    @Html.DisplayFor(modelItem => item.StreetName)
+                </div>
+
+                <div class="col-sm-2">
+                    @Html.DisplayFor(modelItem => item.SubdivisionName)
+                </div>
+
+                <div class="col-sm-1">
+                    @Html.DisplayFor(modelItem => item.House)
+                </div>
+
+                <div class="col-sm-1">
+                    @Html.DisplayFor(modelItem => item.СountFloor)
+                </div>
+
+                <div class="col-sm-1">
+                    @Html.DisplayFor(modelItem => item.СountEntrance)
+                </div>
+
+                <div class="col-sm-3">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.AddressId }, new { @class = "btn btn-small btn-warning" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.AddressId },
+                                     new { @class = "btn btn-small btn-danger deletedaddress", data_id = item.AddressId })
+                </div>
+
+
+            </div>
+        </div>
+        <hr>
+    }
+
+
+</div>
+
+
+<div id="paging"  class="col-sm-12  text-center">
+
+    @Html.PageLinks(Model.paging)
+
+</div>
+
+<script src="/Scripts/jquery-3.3.1.min.js"></script>
+<script src="/Scripts/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+        $(function () {
+
+            $('.deletedaddress').click(function (e) {
+                var id =  $(this).attr('data-id');
+                e.preventDefault();
+                if (confirm('Are you sure?'))
+                {
+
+                    $.ajax({
+                        url: "/Address/Delete",
+                        type: 'POST',
+                        data: {id: id},
+                        success: function (data) {
+                            if (data == "OK") {
+                                window.location.href = "/Address/Index";
+                            }
+                            else
+                                alert("Error on server");
+                        },
+                        error: function (data) {
+                            alert(data)
+
+                        }
+                    });
+                }
+            });         
+
+        });
+
+</script>
+

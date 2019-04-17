@@ -48,3 +48,27 @@ C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BL
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.csproj.CopyComplete
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.dll
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.pdb
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\ACP.BLL.dll.config
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\ACP.BLL.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\ACP.BLL.pdb
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\ACP.DAL.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\AutoMapper.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\AutoMapper.Extensions.ExpressionMapping.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\EntityFramework.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\Ninject.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\System.ValueTuple.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\ACP.DAL.pdb
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\ACP.DAL.dll.config
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\AutoMapper.pdb
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\AutoMapper.xml
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\AutoMapper.Extensions.ExpressionMapping.xml
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\EntityFramework.xml
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\Ninject.xml
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\bin\Debug\System.ValueTuple.xml
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\obj\Debug\ACP.BLL.csprojAssemblyReference.cache
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\obj\Debug\ACP.BLL.csproj.CoreCompileInputs.cache
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\obj\Debug\ACP.BLL.csproj.CopyComplete
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\obj\Debug\ACP.BLL.dll
+C:\Users\student.LAN\Desktop\TeamProj\ACP.BLL\obj\Debug\ACP.BLL.pdb
