@@ -172,10 +172,21 @@
         });
         $("#addPlace").click(function (e) {
             let str = $('#searchInput').val();
-            routeArr.push(str);
             let o = new Option(str, routeArr.length);
             $(o).html(str);
             $("#routeList").append(o);
+            $.ajax({
+                url: "/Home/ShowPlace",
+                type: "POST",
+                dataType: "json",
+                data: { content: str },
+                success: function (data) {
+                    routeArr.push(new google.maps.LatLng(parseFloat(data.Item1.lat), parseFloat(data.Item1.lon)));
+                },
+                error: function (e) {
+                    alert("Something went wrong on server");
+                }
+            });
         });
         $("#buildRoute").click(buildRoute);
         initialize();
