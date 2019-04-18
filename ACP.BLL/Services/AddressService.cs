@@ -17,7 +17,7 @@ namespace ACP.BLL.Services
         public AddressService(IGenericRepository<Address> rep) : base(rep) { }
         
 
-        protected virtual IMapper InitMapper()
+        protected override IMapper InitMapper()
         {
             return new MapperConfiguration(cfg =>
              {
