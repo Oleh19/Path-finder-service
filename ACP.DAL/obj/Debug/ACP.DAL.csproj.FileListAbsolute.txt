@@ -23,3 +23,15 @@ C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.DA
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CopyComplete
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.dll
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.pdb
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.dll.config
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.pdb
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CoreCompileInputs.cache
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CopyComplete
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.pdb
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csprojAssemblyReference.cache
