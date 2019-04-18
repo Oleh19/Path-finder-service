@@ -46,3 +46,15 @@ H:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CoreCompileInputs.cache
 H:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CopyComplete
 H:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.dll
 H:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.pdb
+D:\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.dll.config
+D:\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.dll
+D:\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.pdb
+D:\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.dll
+D:\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.xml
+D:\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csprojAssemblyReference.cache
+D:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CoreCompileInputs.cache
+D:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CopyComplete
+D:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.dll
+D:\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.pdb

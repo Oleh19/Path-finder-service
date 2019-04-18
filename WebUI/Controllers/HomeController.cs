@@ -14,6 +14,7 @@ namespace ТеаmGoogleMap.Maps.Controllers
         IGenericService<AddressDTO> addressesService;
         IGenericService<StreetDTO> streetsService;
         IGenericService<SubdivisionDTO> subdivisionsService;
+        List<AddressDTO> addresses;
 
         public HomeController(IGenericService<AddressDTO> addressService,
                               IGenericService<StreetDTO> streetService,
@@ -22,6 +23,7 @@ namespace ТеаmGoogleMap.Maps.Controllers
             this.addressesService = addressService;
             this.streetsService = streetService;
             this.subdivisionsService = subdivisionService;
+            addresses = addressesService.GetAll().ToList();
         }
 
 
@@ -83,11 +85,10 @@ namespace ТеаmGoogleMap.Maps.Controllers
         [HttpPost]
         public string Autocomplete(string content)
         {
-            var matches = addressesService
-                .GetAll()
+            var matches = addresses
                 .Where(x => content.ToLower().Contains(x.House.ToLower()) ||
                 x.StreetName.ToLower().Contains(content.ToLower()))
-                .Select(x => new { id = x.AddressId, value = $"{x.StreetName}, {x.House}", lat = x.Latitude, lon = x.Longitude });
+                .Select(x => new { id = x.AddressId, value = $"{x.StreetName}, {x.House}", lat = x.Latitude, lon = x.Longitude }).Take(10);
             string output = JsonConvert.SerializeObject(matches);
             return output;
         }
@@ -95,7 +96,6 @@ namespace ТеаmGoogleMap.Maps.Controllers
         [HttpPost]
         public string ShowPlace(string content)
         {
-            List<AddressDTO> addresses = addressesService.GetAll().ToList();
             dynamic coords = addresses
                 .Select(x => new
                 {

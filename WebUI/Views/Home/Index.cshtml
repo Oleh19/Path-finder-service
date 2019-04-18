@@ -36,6 +36,7 @@
     <input type="text" id="searchInput" />
     <button id="showPlace" class="btn btn-small btn-warning">Go to</button>
     <button id="addPlace" class="btn btn-small btn-primary">+</button>
+    <button id="removePlace" class="btn btn-small btn-primary">-</button>
     <button id="buildRoute" class="btn btn-small btn-danger">Build route</button>
     <select id="routeList" multiple></select>
 </div>
@@ -45,6 +46,7 @@
 {
 
 <script>
+
     $(function () {
         var arrMarkers = [];
         var arrInfoWindows = [];
@@ -102,16 +104,16 @@
         }
         function buildRoute()
         {
-            let origin = routeArr[0];
-            let dest = routeArr.pop();
-            routeArr = routeArr.slice(1);
-            console.log(origin);
-            console.log(dest);
-            console.log(routeArr);
+            let buff = routeArr.slice();
+            let origin = buff[0];
+            let dest = buff.pop();
+            buff = buff.slice(1);
+
+            //console.log(routeArr);
             directionsService.route({
                 origin: origin,
                 destination: dest,
-                waypoints: routeArr,
+                waypoints: buff,
                 optimizeWaypoints: true,
                 travelMode: 'DRIVING'
             }, function (response, status) {
@@ -171,6 +173,9 @@
             });
         });
         $("#addPlace").click(function (e) {
+            console.log(routeArr);
+
+            $('#buildRoute').addClass('disabled');
             let str = $('#searchInput').val();
             let o = new Option(str, routeArr.length);
             $(o).html(str);
@@ -181,14 +186,36 @@
                 dataType: "json",
                 data: { content: str },
                 success: function (data) {
-                    routeArr.push(new google.maps.LatLng(parseFloat(data.Item1.lat), parseFloat(data.Item1.lon)));
+                    console.log(routeArr.push({ location: { lat: parseFloat(data.Item1.lat), lng: parseFloat(data.Item1.lon) } }));
                 },
                 error: function (e) {
                     alert("Something went wrong on server");
+                },
+                complete: function (e) {
+                    $('#buildRoute').removeClass('disabled');
+                    //console.log(routeArr);
                 }
             });
+
+            
         });
         $("#buildRoute").click(buildRoute);
+        $("#removePlace").click(function (e) {
+            let coll = $("#routeList option");
+                
+            for (let i = 0; i < routeArr.length; i++) {
+                if ($(coll[i]).attr('selected') == 'selected')
+                    routeArr.splice(i, 1);
+            }
+            let list = $("#routeList");
+            let o;
+            list.empty();
+            for (let i = 0; i < routeArr.length; i++) {
+                o = new Option(routeArr[i], i);
+                $(o).html(routeArr[i]);
+                list.append(o);
+            }
+        });
         initialize();
         fill();
         //buildRoute();
@@ -196,6 +223,6 @@
 </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2x0YOLeRMePiIUr-aQFv7i31HZPdHWEo&callback=myMap">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2x0YOLeRMePiIUr-aQFv7i31HZPdHWEo&callback=qwe">
     </script>
 }
