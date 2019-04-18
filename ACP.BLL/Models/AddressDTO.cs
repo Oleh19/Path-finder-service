@@ -24,12 +24,6 @@ namespace ACP.BLL.Models
 
 
         public int SubdivisionId { get; set; }
-        
-        [StringLength(128)]
-        public string StreetName { get; set; }
-
-        [StringLength(64)]
-        public string SubdivisionName { get; set; }
 
         [Required]
         [StringLength(24)]

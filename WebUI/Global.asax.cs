@@ -18,8 +18,10 @@ namespace WebUI
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
+            //NinjectRegistration
             NinjectModule registrations = new ServiceModule();
             var kernel = new StandardKernel(registrations);
+            kernel.Unbind<ModelValidatorProvider>();
             DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
         }
     }

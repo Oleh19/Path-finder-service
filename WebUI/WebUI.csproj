@@ -126,11 +126,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CreateList.cs" />
+    <Compile Include="Helpers\PageLinks.cs" />
     <Compile Include="Models\AddressVM.cs" />
+    <Compile Include="Models\PagingInfo.cs" />
+    <Compile Include="Models\VwAddressByStreet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +149,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Views\Address\AddresByStreet.cshtml" />
+    <Content Include="Views\Address\Edit.cshtml" />
+    <Content Include="Views\Address\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -158,6 +166,10 @@
     <ProjectReference Include="..\ACP.BLL\ACP.BLL.csproj">
       <Project>{b6901784-51b5-476c-abc8-93cfd1aa9610}</Project>
       <Name>ACP.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ACP.DAL\ACP.DAL.csproj">
+      <Project>{A7B300E1-071E-45C4-88B9-425535748A95}</Project>
+      <Name>ACP.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
