@@ -35,6 +35,9 @@
 <div class="form-horizontal">
     <input type="text" id="searchInput" />
     <button id="showPlace" class="btn btn-small btn-warning">Go to</button>
+    <button id="addPlace" class="btn btn-small btn-primary">+</button>
+    <button id="buildRoute" class="btn btn-small btn-danger">Build route</button>
+    <select id="routeList" multiple></select>
 </div>
 <div id="map_canvas"></div>
 
@@ -48,6 +51,7 @@
         var map, directionsService, directionsDisplay, currentlyOpened;
         var json = @Html.Raw(Json.Encode(@Model));
         var arr = JSON.parse(json);
+        let routeArr = [];
 
         function initialize()
         {
@@ -98,10 +102,16 @@
         }
         function buildRoute()
         {
+            let origin = routeArr[0];
+            let dest = routeArr.pop();
+            routeArr = routeArr.slice(1);
+            console.log(origin);
+            console.log(dest);
+            console.log(routeArr);
             directionsService.route({
-                origin: arrMarkers[1093].title,
-                destination: arrMarkers[1004].title,
-                waypoints: [],
+                origin: origin,
+                destination: dest,
+                waypoints: routeArr,
                 optimizeWaypoints: true,
                 travelMode: 'DRIVING'
             }, function (response, status) {
@@ -160,7 +170,14 @@
                 }
             });
         });
-
+        $("#addPlace").click(function (e) {
+            let str = $('#searchInput').val();
+            routeArr.push(str);
+            let o = new Option(str, routeArr.length);
+            $(o).html(str);
+            $("#routeList").append(o);
+        });
+        $("#buildRoute").click(buildRoute);
         initialize();
         fill();
         //buildRoute();

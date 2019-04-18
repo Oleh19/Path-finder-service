@@ -14,13 +14,11 @@ namespace ТеаmGoogleMap.Maps.Controllers
         IGenericService<AddressDTO> addressesService;
         IGenericService<StreetDTO> streetsService;
         IGenericService<SubdivisionDTO> subdivisionsService;
-        //TeamGoogleMapContext context;
 
         public HomeController(IGenericService<AddressDTO> addressService,
                               IGenericService<StreetDTO> streetService,
                               IGenericService<SubdivisionDTO> subdivisionService)
         {
-            //context = new TeamGoogleMapContext();
             this.addressesService = addressService;
             this.streetsService = streetService;
             this.subdivisionsService = subdivisionService;
@@ -89,7 +87,7 @@ namespace ТеаmGoogleMap.Maps.Controllers
                 .GetAll()
                 .Where(x => content.ToLower().Contains(x.House.ToLower()) ||
                 x.StreetName.ToLower().Contains(content.ToLower()))
-                .Select(x => new { id = x.AddressId, value = $"{x.StreetName}, {x.House}" });
+                .Select(x => new { id = x.AddressId, value = $"{x.StreetName}, {x.House}", lat = x.Latitude, lon = x.Longitude });
             string output = JsonConvert.SerializeObject(matches);
             return output;
         }
@@ -97,8 +95,8 @@ namespace ТеаmGoogleMap.Maps.Controllers
         [HttpPost]
         public string ShowPlace(string content)
         {
-            dynamic coords = addressesService
-                .GetAll()
+            List<AddressDTO> addresses = addressesService.GetAll().ToList();
+            dynamic coords = addresses
                 .Select(x => new
                 {
                     id = x.AddressId,
@@ -112,11 +110,10 @@ namespace ТеаmGoogleMap.Maps.Controllers
                     x.lon,
                     x.id,
                 }).First();
-            var list = addressesService.GetAll().ToList();
             int cnt = -1;
-            for (int i = 0; i < list.Count; i++)
+            for (int i = 0; i < addresses.Count; i++)
             {
-                if (list[i].AddressId == coords.id)
+                if (addresses[i].AddressId == coords.id)
                     cnt = i;
             }
             string output = JsonConvert.SerializeObject(new Tuple<dynamic, int>(coords, cnt));
