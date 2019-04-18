@@ -48,3 +48,27 @@ C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BL
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.csproj.CopyComplete
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.dll
 C:\Users\Asus\Desktop\Клонь сука заново\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.pdb
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\ACP.BLL.dll.config
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\ACP.BLL.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\ACP.BLL.pdb
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\ACP.DAL.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\AutoMapper.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\AutoMapper.Extensions.ExpressionMapping.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\EntityFramework.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\Ninject.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\System.ValueTuple.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\ACP.DAL.pdb
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\ACP.DAL.dll.config
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\AutoMapper.pdb
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\AutoMapper.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\AutoMapper.Extensions.ExpressionMapping.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\EntityFramework.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\Ninject.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\bin\Debug\System.ValueTuple.xml
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.csprojAssemblyReference.cache
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.csproj.CoreCompileInputs.cache
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.csproj.CopyComplete
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.dll
+D:\TeamProject.Maps-копия\MVC5AcademyProject\ACP.BLL\obj\Debug\ACP.BLL.pdb

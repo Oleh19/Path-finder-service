@@ -1,0 +1,138 @@
+﻿@using ТеаmGoogleMap.Maps.Models
+@model string
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    input,
+    select,
+    textarea {
+        max-width: 500px !important;
+        width: 250ch !important;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #map_canvas {
+        height: 600px;
+    }
+</style>
+
+<h2>Index</h2>
+
+<div class="form-horizontal">
+    <input type="text" id="searchInput" />
+    <button id="showPlace btn btn-small btn-warning"></button>
+</div>
+<div id="map_canvas"></div>
+
+@section MyScript
+{
+
+<script>
+    $(function () {
+        var arrMarkers = [];
+        var arrInfoWindows = [];
+        var map, directionsService, directionsDisplay, currentlyOpened;
+        var json = @Html.Raw(Json.Encode(@Model));
+        var arr = JSON.parse(json);
+        function initialize()
+        {
+            var myLatlng = new google.maps.LatLng(50.44, 30.61);
+            var myOptions = {
+                zoom: 15,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            directionsService = new google.maps.DirectionsService;
+            directionsDisplay = new google.maps.DirectionsRenderer;
+            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+            directionsDisplay.setMap(map);
+        }
+        function fill()
+        {
+            var markerlatLng, title, description, contentString, infowindow, marker;
+            Array.from(arr).forEach((obj) => {
+                markerlatLng = new google.maps.LatLng(parseFloat(obj.Latitude), parseFloat(obj.Longitude));
+                title = obj.House + ', ' + obj.StreetName;
+                description = 'Served by ' + obj.SubdivisionName;
+                contentString = '<h3>' + title + '</h3>' + '<p>' + description + '</p>'
+
+                infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                marker = new google.maps.Marker({
+                    position: markerlatLng,
+                    title: title,
+                    map: map,
+                    draggable: false
+                });
+                arrMarkers.push(marker);
+                arrInfoWindows.push(infowindow);
+            });
+            for (let i = 0; i < arrMarkers.length; i++) {
+                google.maps.event.addListener(arrMarkers[i], 'click', function () {
+                    if (currentlyOpened != undefined)
+                        currentlyOpened.close();
+                    currentlyOpened = arrInfoWindows[i];
+                    arrInfoWindows[i].open(map, arrMarkers[i]);
+                });
+            };
+            var markerCluster = new MarkerClusterer(map, arrMarkers,
+                { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+        }
+        function buildRoute()
+        {
+            directionsService.route({
+                origin: arrMarkers[1093].title,
+                destination: arrMarkers[1004].title,
+                waypoints: [],
+                optimizeWaypoints: true,
+                travelMode: 'DRIVING'
+            }, function (response, status) {
+                if (status === 'OK') {
+                    directionsDisplay.setDirections(response);
+                } else {
+                    window.alert('Directions request failed due to ' + status);
+                }
+            });
+        }
+        $("#searchInput").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/Home/Autocomplete",
+                    type: "POST",
+                    dataType: "json",
+                    data: { content: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                label: item.value,
+                                value: item.id,
+                                id: item.id
+                            }
+                        }))
+                    }
+                });
+            },
+            minLength: 3,
+            messages: {
+                noResults: "",
+                results: function (count) {
+                    return count + (count > 1 ? ' results' : ' result ') + ' found';
+                }
+            }
+        });
+
+        initialize();
+        fill();
+        //buildRoute();
+    });
+</script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2x0YOLeRMePiIUr-aQFv7i31HZPdHWEo&callback=myMap">
+    </script>
+}
