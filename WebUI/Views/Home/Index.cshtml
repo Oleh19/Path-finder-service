@@ -187,19 +187,38 @@
                 destination: dest,
                 waypoints: buff,
                 optimizeWaypoints: ow,
-                provideRouteAlternatives: true,
+                provideRouteAlternatives: ar,
                 travelMode: tm,
             }, function (response, status) {
                 if (status === 'OK') {
+                    //http://qaru.site/questions/12446354/google-map-direction-render-alternate-route-how-to-select-desired-path
                     directionsDisplay.setDirections(response);
-                    //for (var i = 0, len = response.routes.length; i < len; i++) {
-                    //    alert(123);
-                    //    new google.maps.DirectionsRenderer({
-                    //        map: map,
-                    //        directions: response,
-                    //        routeIndex: i
-                    //    });
-                    //}
+                    var polycolour = "";
+                    var Opacity = 0;
+                    for (var i = 0, len = response.routes.length; i < len; i++) {
+                        if (i == 0) {
+                            polycolour = "Blue";
+                            Opacity = 5;
+                        }
+                        else {
+                            polycolour = "grey";
+                            Opacity = 2;
+                        }
+                        directionsDisplay = new google.maps.DirectionsRenderer({
+                            map: map,
+                            directions: response,
+                            routeIndex: i,
+                            polylineOptions: {
+                                strokeColor: polycolour,
+                                strokeWeight: Opacity
+                            }
+                        });
+
+                        var infowindow2 = new google.maps.InfoWindow();
+                        infowindow2.setContent("" + ((response.routes[i].legs[0].distance.value) / 1000) + " KM");
+                        infowindow2.setPosition(response.routes[i].legs[0].steps[0].end_location);
+                        infowindow2.open(map);
+                    }
                 } else {
                     window.alert('Directions request failed due to ' + status);
                 }
