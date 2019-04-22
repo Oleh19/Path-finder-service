@@ -10,8 +10,6 @@
     textarea {
         max-width: 500px !important;
         width: 250ch !important;
-        margin-top: 30px;
-        margin-bottom: 50px;
     }
 
     #map_canvas {
@@ -28,17 +26,83 @@
         border-style: dashed;
         border-color: royalblue;
     }
+    .group {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .flex-direction {
+        display: flex;
+        flex-direction: column;
+    }
+    #routeList{
+        height: 100px;
+    }
+    .space-between{
+        display:flex;
+        justify-content: space-between;
+    }
+    .straight-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .straight-row input{
+        width: 16px !important;
+        margin-top: 0 !important;
+    }
+    .straight-row p,
+    .straight-row label {
+        margin-bottom: 0 !important;
+    }
+
+    .options {
+        width: 550px;
+        border-width: 2px;
+        border-color: royalblue;
+        border-style: ridge;
+        border-radius: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 </style>
 
 <h2>Index</h2>
 
-<div class="form-horizontal">
-    <input type="text" id="searchInput" />
+<div class="form-horizontal form-group">
+    <input type="text" id="searchInput"/>
     <button id="showPlace" class="btn btn-small btn-warning">Go to</button>
     <button id="addPlace" class="btn btn-small btn-primary">+</button>
-    <button id="removePlace" class="btn btn-small btn-primary">-</button>
     <button id="buildRoute" class="btn btn-small btn-danger">Build route</button>
-    <select id="routeList" multiple></select>
+</div>
+<div class="space-between">
+    <div class="group straight-row">
+        <select id="routeList" multiple></select>
+        <div class="flex-direction">
+            <button id="removePlace" class="btn btn-small btn-primary">-</button>
+            <button id="upRecord" class="btn btn-small btn-primary">&#8593;</button>
+            <button id="downRecord" class="btn btn-small btn-primary">&#8595;</button>
+        </div>
+    </div>
+    <div class="flex-direction options">
+        <div class="straight-row form-group">
+            <label>Travel mode:</label>
+            <p for="tm1">Driving</p>
+            <input type="radio" id="tm1" name="tm" value="DRIVING" checked />
+            <p for="tm2">Bicycling</p>
+            <input type="radio" id="tm2" name="tm" value="BICYCLING" />
+            <p for="tm3">Public transport</p>
+            <input type="radio" id="tm3" name="tm" value="TRANSIT" />
+            <p for="tm4">Walking</p>
+            <input type="radio" id="tm4" name="tm" value="WALKING" />
+        </div>
+        <div class="straight-row form-group">
+            <label>Options:</label>
+            <p for="o1">Optimize route</p>
+            <input type="checkbox" id="o1" name="ow" value="true">
+            <p for="o2">Alternative routes</p>
+            <input type="checkbox" id="o2" name="ar" value="true" class="disabled">
+        </div>
+    </div>
 </div>
 <div id="map_canvas"></div>
 
@@ -46,29 +110,28 @@
 {
 
 <script>
+    var arrMarkers = [];
+    var arrInfoWindows = [];
+    var map, directionsService, directionsDisplay, currentlyOpened;
+    var json = @Html.Raw(Json.Encode(@Model));
+    var arr = JSON.parse(json);
+    let routeArr = [];
+
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(50.44, 30.61);
+        var myOptions = {
+            zoom: 15,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        directionsService = new google.maps.DirectionsService;
+        directionsDisplay = new google.maps.DirectionsRenderer;
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+        directionsDisplay.setMap(map);
+
+    }
 
     $(function () {
-        var arrMarkers = [];
-        var arrInfoWindows = [];
-        var map, directionsService, directionsDisplay, currentlyOpened;
-        var json = @Html.Raw(Json.Encode(@Model));
-        var arr = JSON.parse(json);
-        let routeArr = [];
-
-        function initialize()
-        {
-            var myLatlng = new google.maps.LatLng(50.44, 30.61);
-            var myOptions = {
-                zoom: 15,
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            directionsService = new google.maps.DirectionsService;
-            directionsDisplay = new google.maps.DirectionsRenderer;
-            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-            directionsDisplay.setMap(map);
-            
-        }
         function fill()
         {
             var markerlatLng, title, description, contentString, infowindow, marker;
@@ -108,17 +171,35 @@
             let origin = buff[0];
             let dest = buff.pop();
             buff = buff.slice(1);
-
-            //console.log(routeArr);
+            let tm = $("input:radio[name='tm']:checked").val();
+            let ow = $("input:checkbox[name='ow']:checked").val();
+            if (ow == "true")
+                ow = true;
+            else
+                ow = false;
+            let ar = $("input:checkbox[name='ar']:checked").val();
+            if (ar == "true")
+                ar = true;
+            else
+                ar = false;
             directionsService.route({
                 origin: origin,
                 destination: dest,
                 waypoints: buff,
-                optimizeWaypoints: true,
-                travelMode: 'DRIVING'
+                optimizeWaypoints: ow,
+                provideRouteAlternatives: true,
+                travelMode: tm,
             }, function (response, status) {
                 if (status === 'OK') {
                     directionsDisplay.setDirections(response);
+                    //for (var i = 0, len = response.routes.length; i < len; i++) {
+                    //    alert(123);
+                    //    new google.maps.DirectionsRenderer({
+                    //        map: map,
+                    //        directions: response,
+                    //        routeIndex: i
+                    //    });
+                    //}
                 } else {
                     window.alert('Directions request failed due to ' + status);
                 }
@@ -173,8 +254,6 @@
             });
         });
         $("#addPlace").click(function (e) {
-            console.log(routeArr);
-
             $('#buildRoute').addClass('disabled');
             let str = $('#searchInput').val();
             let o = new Option(str, routeArr.length);
@@ -186,7 +265,7 @@
                 dataType: "json",
                 data: { content: str },
                 success: function (data) {
-                    console.log(routeArr.push({ location: { lat: parseFloat(data.Item1.lat), lng: parseFloat(data.Item1.lon) } }));
+                    routeArr.push({ location: { lat: parseFloat(data.Item1.lat), lng: parseFloat(data.Item1.lon) } });
                 },
                 error: function (e) {
                     alert("Something went wrong on server");
@@ -201,28 +280,25 @@
         });
         $("#buildRoute").click(buildRoute);
         $("#removePlace").click(function (e) {
-            let coll = $("#routeList option");
-                
-            for (let i = 0; i < routeArr.length; i++) {
-                if ($(coll[i]).attr('selected') == 'selected')
-                    routeArr.splice(i, 1);
-            }
             let list = $("#routeList");
-            let o;
-            list.empty();
-            for (let i = 0; i < routeArr.length; i++) {
-                o = new Option(routeArr[i], i);
-                $(o).html(routeArr[i]);
-                list.append(o);
+            let selected = $(list).val();
+            let coll = $(list).children();
+            //let coll = $("#routeList>option");
+            //console.log(selected);
+            //console.log(coll);
+            for (let i = 0; i < selected.length; i++) {
+                routeArr.splice(i, 1);
+                $(coll[i]).remove();
             }
+            //console.log(coll);
+            //console.log(routeArr);
         });
         initialize();
         fill();
-        //buildRoute();
     });
 </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2x0YOLeRMePiIUr-aQFv7i31HZPdHWEo&callback=qwe">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2x0YOLeRMePiIUr-aQFv7i31HZPdHWEo&callback=initialize">
     </script>
 }
