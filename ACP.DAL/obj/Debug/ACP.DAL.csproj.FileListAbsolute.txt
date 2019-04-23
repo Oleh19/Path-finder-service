@@ -46,3 +46,14 @@ C:\Users\student.LAN\Desktop\MVC5\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.c
 C:\Users\student.LAN\Desktop\MVC5\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CopyComplete
 C:\Users\student.LAN\Desktop\MVC5\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.dll
 C:\Users\student.LAN\Desktop\MVC5\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.pdb
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.dll.config
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\bin\Debug\ACP.DAL.pdb
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.xml
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CoreCompileInputs.cache
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.csproj.CopyComplete
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\ACP.DAL\obj\Debug\ACP.DAL.pdb

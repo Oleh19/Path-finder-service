@@ -19,10 +19,14 @@ ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Map", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Address configuration", "Index", "Address", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Admin panel", "Index", "Admin", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Sign out", "SignOut", "Account", new { area = "" }, new { @class = "navbar-brand" })</li>
+                </ul>
             </div>
         </div>
     </div>
