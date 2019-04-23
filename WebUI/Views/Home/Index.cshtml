@@ -73,6 +73,7 @@
     <button id="showPlace" class="btn btn-small btn-warning">Go to</button>
     <button id="addPlace" class="btn btn-small btn-primary">+</button>
     <button id="buildRoute" class="btn btn-small btn-danger">Build route</button>
+    <label id="routeLen">Distance:</label>
 </div>
 <div class="space-between">
     <div class="group straight-row">
@@ -178,7 +179,6 @@
             ow = ow == 'true' ? true : false;
             ar = ar == 'true' ? true : false;
 
-
             directionsService.route({
                 origin: origin,
                 destination: dest,
@@ -187,14 +187,19 @@
                 provideRouteAlternatives: ar,
                 travelMode: tm,
             }, function (response, status) {
+
                 if (status === 'OK') {
                     //http://qaru.site/questions/12446354/google-map-direction-render-alternate-route-how-to-select-desired-path
                     directionsDisplay.setDirections(response);
                     var polycolour = [];
                     polycolour.push('red', 'green', 'yellow', 'grey', 'purple', 'pink', 'brown');
-                    var Opacity = 0;
-                    alert(response.routes.length);
-                    for (let i = 1, len = response.routes.length; i < len; i++) {
+                    let cnt = 0;
+                    response.routes[0].legs.forEach(function (element) {
+                        cnt += element.distance.value / 1000;
+                    });
+                    $('#routeLen').text('Distance: ' + cnt + ' km');
+
+                    for (let i = 1; i < response.routes.length; i++) {
                         directionsDisplay = new google.maps.DirectionsRenderer({
                             map: map,
                             directions: response,
@@ -205,10 +210,10 @@
                             }
                         });
 
-                        var infowindow2 = new google.maps.InfoWindow();
-                        infowindow2.setContent("" + ((response.routes[i].legs[0].distance.value) / 1000) + " KM");
-                        infowindow2.setPosition(response.routes[i].legs[0].steps[0].end_location);
-                        infowindow2.open(map);
+                        //var infowindow2 = new google.maps.InfoWindow();
+                        //infowindow2.setContent("" + ((response.routes[i].legs[0].distance.value) / 1000) + " KM");
+                        //infowindow2.setPosition(response.routes[i].legs[0].steps[0].end_location);
+                        //infowindow2.open(map);
                     }
                 } else {
                     window.alert('Directions request failed due to ' + status);
