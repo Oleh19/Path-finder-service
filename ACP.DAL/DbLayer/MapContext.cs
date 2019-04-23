@@ -8,7 +8,7 @@ namespace ACP.DAL.DbLayer
     public partial class MapContext : DbContext
     {
         public MapContext()
-            : base("name=TeamGoogleMapContextLocal")
+            : base("name=TeamGoogleMapContext")
         {
         }
 

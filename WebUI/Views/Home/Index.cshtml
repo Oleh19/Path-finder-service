@@ -173,15 +173,12 @@
             buff = buff.slice(1);
             let tm = $("input:radio[name='tm']:checked").val();
             let ow = $("input:checkbox[name='ow']:checked").val();
-            if (ow == "true")
-                ow = true;
-            else
-                ow = false;
             let ar = $("input:checkbox[name='ar']:checked").val();
-            if (ar == "true")
-                ar = true;
-            else
-                ar = false;
+
+            ow = ow == 'true' ? true : false;
+            ar = ar == 'true' ? true : false;
+
+
             directionsService.route({
                 origin: origin,
                 destination: dest,
@@ -193,24 +190,18 @@
                 if (status === 'OK') {
                     //http://qaru.site/questions/12446354/google-map-direction-render-alternate-route-how-to-select-desired-path
                     directionsDisplay.setDirections(response);
-                    var polycolour = "";
+                    var polycolour = [];
+                    polycolour.push('red', 'green', 'yellow', 'grey', 'purple', 'pink', 'brown');
                     var Opacity = 0;
-                    for (var i = 0, len = response.routes.length; i < len; i++) {
-                        if (i == 0) {
-                            polycolour = "Blue";
-                            Opacity = 5;
-                        }
-                        else {
-                            polycolour = "grey";
-                            Opacity = 2;
-                        }
+                    alert(response.routes.length);
+                    for (let i = 1, len = response.routes.length; i < len; i++) {
                         directionsDisplay = new google.maps.DirectionsRenderer({
                             map: map,
                             directions: response,
                             routeIndex: i,
                             polylineOptions: {
-                                strokeColor: polycolour,
-                                strokeWeight: Opacity
+                                strokeColor: polycolour[i],
+                                strokeWeight: 4
                             }
                         });
 
