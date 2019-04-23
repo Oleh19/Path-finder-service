@@ -1,0 +1,233 @@
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Step.Identity.dll.config
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Step.Identity.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Step.Identity.pdb
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\EntityFramework.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Owin.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\EntityFramework.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\obj\Debug\Step.Identity.csprojResolveAssemblyReference.cache
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\obj\Debug\Step.Identity.dll
+D:\vs2015\asp.net season2017\Lesson 24 identity sqlite\Step.Identity.Model\Step.Identity\obj\Debug\Step.Identity.pdb
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Step.Identity.dll.config
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Step.Identity.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Step.Identity.pdb
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\EntityFramework.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Owin.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\EntityFramework.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+D:\3V-2017.v.031\ElPower\Step.Identity\obj\Debug\Step.Identity.csprojResolveAssemblyReference.cache
+D:\3V-2017.v.031\ElPower\Step.Identity\obj\Debug\Step.Identity.dll
+D:\3V-2017.v.031\ElPower\Step.Identity\obj\Debug\Step.Identity.pdb
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Step.Identity.dll.config
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Step.Identity.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Step.Identity.pdb
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\EntityFramework.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Owin.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\EntityFramework.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+D:\3V-2017.v.03.01\ElPower\Step.Identity\obj\Debug\Step.Identity.csprojResolveAssemblyReference.cache
+D:\3V-2017.v.03.01\ElPower\Step.Identity\obj\Debug\Step.Identity.dll
+D:\3V-2017.v.03.01\ElPower\Step.Identity\obj\Debug\Step.Identity.pdb
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Step.Identity.dll.config
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Step.Identity.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Step.Identity.pdb
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\EntityFramework.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Owin.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\EntityFramework.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+D:\3V-2017.v.03.02\ElPower\Step.Identity\obj\Debug\Step.Identity.csprojResolveAssemblyReference.cache
+D:\3V-2017.v.03.02\ElPower\Step.Identity\obj\Debug\Step.Identity.dll
+D:\3V-2017.v.03.02\ElPower\Step.Identity\obj\Debug\Step.Identity.pdb
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Step.Identity.dll.config
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Step.Identity.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Step.Identity.pdb
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\EntityFramework.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Owin.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\EntityFramework.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+D:\3V-2017.v.03.031\ElPower\Step.Identity\obj\Debug\Step.Identity.csprojResolveAssemblyReference.cache
+D:\3V-2017.v.03.031\ElPower\Step.Identity\obj\Debug\Step.Identity.dll
+D:\3V-2017.v.03.031\ElPower\Step.Identity\obj\Debug\Step.Identity.pdb
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.dll.config
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.pdb
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.csprojResolveAssemblyReference.cache
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.dll
+D:\vs2017\asp.net season 2018\Lesson 26 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.pdb
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.dll.config
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.pdb
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.csprojResolveAssemblyReference.cache
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.dll
+D:\vs2017\asp.net season 2018\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.pdb
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.dll.config
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Step.Identity.pdb
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.SqlServer.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Newtonsoft.Json.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.xml
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.xml
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.csprojAssemblyReference.cache
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.csproj.CoreCompileInputs.cache
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.csproj.CopyComplete
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.dll
+C:\asp.net\asp.net mvc\Lesson 27 asp.net Identity\Step.Identity\obj\Debug\Step.Identity.pdb
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Step.Identity.dll.config
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Step.Identity.dll
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Step.Identity.pdb
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\EntityFramework.xml
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Microsoft.Owin.xml
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Microsoft.Owin.Security.xml
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\obj\Debug\Step.Identity.csprojAssemblyReference.cache
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\obj\Debug\Step.Identity.csproj.CoreCompileInputs.cache
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\obj\Debug\Step.Identity.csproj.CopyComplete
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\obj\Debug\Step.Identity.dll
+E:\Projects\ASP.NET\TeamProjectPart\Step.Identity\obj\Debug\Step.Identity.pdb
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Step.Identity.dll.config
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Step.Identity.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Step.Identity.pdb
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Owin.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\obj\Debug\Step.Identity.csprojAssemblyReference.cache
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\obj\Debug\Step.Identity.csproj.CoreCompileInputs.cache
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\obj\Debug\Step.Identity.csproj.CopyComplete
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\obj\Debug\Step.Identity.dll
+C:\Users\powsh\Desktop\gitTest\MVC5AcademyProject\Step.Identity\obj\Debug\Step.Identity.pdb

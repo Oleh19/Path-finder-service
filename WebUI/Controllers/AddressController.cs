@@ -10,6 +10,7 @@ using WebUI.Models;
 
 namespace WebUI.Controllers
 {
+    [Authorize]
     public class AddressController : Controller
     {
         IGenericService<StreetDTO> streetService;
