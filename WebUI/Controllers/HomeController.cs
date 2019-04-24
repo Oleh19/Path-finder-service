@@ -1,4 +1,4 @@
-﻿using ACP.BLL.Models;
+using ACP.BLL.Models;
 using ACP.BLL.Services;
 using Newtonsoft.Json;
 using System;
@@ -14,16 +14,16 @@ namespace ТеаmGoogleMap.Maps.Controllers
         IGenericService<AddressDTO> addressesService;
         IGenericService<StreetDTO> streetsService;
         IGenericService<SubdivisionDTO> subdivisionsService;
-        //TeamGoogleMapContext context;
+        List<AddressDTO> addresses;
 
         public HomeController(IGenericService<AddressDTO> addressService,
                               IGenericService<StreetDTO> streetService,
                               IGenericService<SubdivisionDTO> subdivisionService)
         {
-            //context = new TeamGoogleMapContext();
             this.addressesService = addressService;
             this.streetsService = streetService;
             this.subdivisionsService = subdivisionService;
+            addresses = addressesService.GetAll().ToList();
         }
 
 
@@ -85,11 +85,10 @@ namespace ТеаmGoogleMap.Maps.Controllers
         [HttpPost]
         public string Autocomplete(string content)
         {
-            var matches = addressesService
-                .GetAll()
+            var matches = addresses
                 .Where(x => content.ToLower().Contains(x.House.ToLower()) ||
                 x.StreetName.ToLower().Contains(content.ToLower()))
-                .Select(x => new { id = x.AddressId, value = $"{x.StreetName}, {x.House}" });
+                .Select(x => new { id = x.AddressId, value = $"{x.StreetName}, {x.House}", lat = x.Latitude, lon = x.Longitude }).Take(10);
             string output = JsonConvert.SerializeObject(matches);
             return output;
         }
@@ -97,8 +96,7 @@ namespace ТеаmGoogleMap.Maps.Controllers
         [HttpPost]
         public string ShowPlace(string content)
         {
-            dynamic coords = addressesService
-                .GetAll()
+            dynamic coords = addresses
                 .Select(x => new
                 {
                     id = x.AddressId,
@@ -112,11 +110,10 @@ namespace ТеаmGoogleMap.Maps.Controllers
                     x.lon,
                     x.id,
                 }).First();
-            var list = addressesService.GetAll().ToList();
             int cnt = -1;
-            for (int i = 0; i < list.Count; i++)
+            for (int i = 0; i < addresses.Count; i++)
             {
-                if (list[i].AddressId == coords.id)
+                if (addresses[i].AddressId == coords.id)
                     cnt = i;
             }
             string output = JsonConvert.SerializeObject(new Tuple<dynamic, int>(coords, cnt));
