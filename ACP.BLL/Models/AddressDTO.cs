@@ -22,7 +22,6 @@ namespace ACP.BLL.Models
         [StringLength(64)]
         public string SubdivisionName { get; set; }
 
-
         public int SubdivisionId { get; set; }
 
         [Required]
